@@ -1,0 +1,39 @@
+/* --------- blogs -------- */
+.blogs .container {
+  justify-content: space-between;
+  gap: 3%;
+}
+.blogs .blog-item {
+  width: calc(94% / 3);
+  background-color: var(--white);
+}
+.blogs .blog-item img {
+  width: 100%;
+}
+.blogs .blog-item .blog-text {
+  padding: 15px 15px 20px;
+}
+.blogs .blog-item .blog-text .blog-list li {
+  padding-right: 10px;
+}
+.blogs .blog-item .blog-text .blog-list li i {
+  color: var(--main-color);
+  padding-right: 2px;
+}
+.blogs .blog-item .blog-text .blog-title {
+  padding-top: 15px;
+  font-weight: bold;
+}
+.blogs .blog-item .blog-text .blog-desc {
+  color: var(--gray);
+  padding: 10px 0;
+  line-height: 1.6;
+  font-size: 15px;
+}
+.blogs .blog-item .blog-text .blog-btn {
+  border: none;
+  background: transparent;
+  color: var(--main-color);
+  text-transform: capitalize;
+}
+/* -----x---- blogs ---x----- */

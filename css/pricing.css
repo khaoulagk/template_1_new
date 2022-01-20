@@ -1,0 +1,56 @@
+/* ------- pricing -------- */
+.pricing .container {
+  justify-content: space-between;
+  gap: 2%;
+}
+.pricing .container .pricing-item {
+  width: calc(96% / 3);
+  padding: 40px 15px;
+  border: 1px solid #c7c6c6;
+  text-align: center;
+  position: relative;
+}
+.pricing .pricing-item .pricing-text {
+  text-transform: uppercase;
+  font-size: 17px;
+  color: var(--gray);
+  transition: color var(--main-transition);
+}
+.pricing .pricing-item .pricing-permonth {
+  width: 130px;
+  height: 130px;
+  margin: 20px auto;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  padding: 20px;
+  transition: color var(--main-transition);
+}
+.pricing .pricing-item .pricing-permonth .doller {
+  font-size: 50px;
+}
+.pricing .pricing-item .pricing-permonth .month {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+}
+.pricing .pricing-item .pricing-list li {
+  color: var(--gray);
+  line-height: 1.8;
+}
+.pricing .pricing-item .purchase {
+  background: none;
+  border: 0;
+  display: block;
+  width: 120px;
+  background: var(--main-color);
+  padding: 10px;
+  margin: 15px auto 0;
+  color: var(--white);
+}
+.pricing .pricing-item:hover {
+  color: var(--white);
+}
+.pricing .pricing-item:hover .pricing-text {
+  color: var(--main-color);
+}
+/* ---x---- pricing ----x---- */

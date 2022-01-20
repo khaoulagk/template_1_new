@@ -1,0 +1,30 @@
+/* ----- offer ----- */
+.offer .container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 2%;
+  row-gap: 20px;
+}
+.offer .container .offer-item {
+  width: calc(96% / 3);
+  border: 1px solid #e8e8e8;
+  padding: 30px 15px 20px 70px;
+  position: relative;
+}
+.offer .container .offer-item .icon {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+}
+.offer .container .offer-item .offer-title {
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.offer .container .offer-item .offer-desc {
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: var(--gray);
+}
+/* ---x-- offer --x--- */

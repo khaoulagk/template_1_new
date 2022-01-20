@@ -1,0 +1,38 @@
+/* --------- testimonail ------- */
+.testimonail {
+  background: url(../imgs/Alg-img-16.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 350px;
+}
+.testimonail .container {
+  justify-content: center;
+  gap: 4%;
+  padding: 50px 2%;
+}
+.testimonail .testimonail-item {
+  width: calc(92% / 2);
+  padding: 30px 0;
+  color: var(--white);
+  letter-spacing: 1.1px;
+}
+.testimonail .testimonail-item .top-layer {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.testimonail .testimonail-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.testimonail .testimonail-item .top-layer span {
+  color: var(--main-color);
+}
+.testimonail .testimonail-item .testimonail-desc {
+  line-height: 1.6;
+  font-size: 17px;
+}
+/* -----x---- testimonail ---x---- */

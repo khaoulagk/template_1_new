@@ -1,0 +1,246 @@
+/*
+1- common style
+2- general style
+3- sections _header
+            _home
+            _about
+            _portfolio
+            _prices
+            _team
+            _blog
+            _contact
+
+*/
+/* common
+- container
+- opacity hover
+- section padding
+- hover effect 1 ( left to right )
+- hover effect 2 ( top to bottom )
+
+*/
+/* Start Global Rules */
+:root {
+  --main-color: #ffc752;
+  --gray: #999;
+  --white: #fff;
+  --main-transition: 0.3s;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.hover-opacity {
+  transition: opacity 0.3s;
+}
+.hover-opacity:hover {
+  opacity: 0.7;
+}
+body {
+  font-family: "Varela Round", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: montserrat, sans-serif;
+}
+button {
+  font-family: inherit;
+}
+.pd-y {
+  padding: 100px 0;
+}
+.dis-flex {
+  display: flex;
+}
+.section-header {
+  text-align: center;
+  padding-top: 20px;
+}
+.section-header .title {
+  font-size: 35px;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+.section-header .line {
+  display: block;
+  height: 5px;
+  width: 60px;
+  margin: 0 auto 70px;
+  background-color: var(--main-color);
+}
+.ltr-effect::after,
+.ttb-effect::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #c5c5c5;
+  z-index: -1;
+  transition: var(--main-transition);
+}
+.ltr-effect::after {
+  width: 0;
+  height: 100%;
+}
+.ltr-effect:hover::after {
+  width: 100%;
+}
+.ttb-effect::after {
+  width: 100%;
+  height: 0;
+}
+.ttb-effect:hover::after {
+  height: 100%;
+}
+.backgnd-color {
+  background-color: #f9f9f9;
+}
+/* End Global Rules */
+/* start header */
+.header {
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background: rgb(255 255 255 / 10%);
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.header .logo {
+  width: 40%;
+}
+.header .logo img {
+  width: 150px;
+}
+.header .nav {
+  display: flex;
+}
+.header .nav > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  position: relative;
+  color: var(--white);
+  padding: 0 15px;
+  transition: var(--main-transition);
+  overflow: hidden;
+  margin-left: 15px;
+}
+.header .nav > li > a::before {
+  content: "";
+  position: absolute;
+  width: 97%;
+  height: 3px;
+  background-color: var(--main-color);
+  right: -100%;
+  transition: var(--main-transition);
+  bottom: 0;
+}
+.header .nav > li > a.active::before,
+.header .nav > li > a:hover::before {
+  right: 0;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute;
+  background-color: var(--white);
+  width: 250px;
+  padding: 20px;
+  border-bottom: 3px solid var(--main-color);
+  opacity: 0;
+  top: calc(100% + 50px);
+  left: 17px;
+  transition: top var(--main-transition), opacity var(--main-transition);
+  visibility: hidden;
+}
+.dropdown-menu li {
+  padding: 20px 0 10px;
+}
+.dropdown-menu li > a {
+  color: black;
+  transition: var(--main-transition);
+}
+.dropdown-menu li a:hover {
+  color: var(--main-color);
+}
+.dropdown-menu li a i {
+  margin-right: 5px;
+}
+.dropdown-menu li:not(:last-child) {
+  border-bottom: 1px solid var(--main-color);
+}
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  top: calc(100% + 1px);
+  visibility: visible;
+}
+/* end header */
+/* start home */
+.home {
+  height: 100vh;
+  background-image: url(../imgs/Alg-img-16.jpg);
+  background-size: cover;
+  position: relative;
+}
+.home .home-content {
+  width: 65%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.home .title {
+  color: var(--white);
+  font-size: 3.4rem;
+  text-transform: uppercase;
+}
+.home .home-desc {
+  margin: 20px 0;
+  color: var(--white);
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+.home .btn {
+  min-width: 160px;
+  padding: 13px 0;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.home .btn-start {
+  margin-right: 10px;
+  background-color: var(--white);
+}
+.home .btn-learn {
+  background-color: #ffc752;
+}

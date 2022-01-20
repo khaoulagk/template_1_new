@@ -1,0 +1,30 @@
+/* ------- numbers -------- */
+.numbers {
+  background: url(../imgs/Alg-img-16.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  height: 270px;
+}
+.numbers .container {
+  justify-content: space-between;
+  gap: 5%;
+}
+.numbers .container .item {
+  width: calc(85% / 4);
+  text-align: center;
+}
+.numbers .container .item .icon {
+  color: var(--main-color);
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+.numbers .container .item .number {
+  font-weight: bold;
+  font-size: 35px;
+  color: var(--white);
+}
+.numbers .container .item .text {
+  color: var(--white);
+}
+/* ---x---- numbers ----x--- */

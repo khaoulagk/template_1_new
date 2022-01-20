@@ -1,0 +1,35 @@
+/* start about */
+.about .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+}
+.about .container .about-item {
+  width: calc(93% / 3);
+  border: 1px solid #eeeded;
+  padding: 50px 20px;
+  box-shadow: 0 0 2px #c7c6c6;
+  text-align: center;
+  position: relative;
+}
+
+.about .about-item .icon {
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+.about .about-item-title {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.about .about-item-desc {
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.about .about-item a {
+  color: var(--main-color);
+  font-weight: bold;
+}
+/* end about  */
