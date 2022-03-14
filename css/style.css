@@ -11,14 +11,6 @@
             _contact
 
 */
-/* common
-- container
-- opacity hover
-- section padding
-- hover effect 1 ( left to right )
-- hover effect 2 ( top to bottom )
-
-*/
 /* Start Global Rules */
 :root {
   --main-color: #ffc752;
@@ -205,7 +197,7 @@ button {
 /* end header */
 /* start home */
 .home {
-  height: 100vh;
+  height: calc(100vh - 100px);
   background-image: url(../imgs/Alg-img-16.jpg);
   background-size: cover;
   position: relative;
