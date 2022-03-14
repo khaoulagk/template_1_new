@@ -197,7 +197,7 @@ button {
 /* end header */
 /* start home */
 .home {
-  height: calc(100vh - 100px);
+  height: 100vh;
   background-image: url(../imgs/Alg-img-16.jpg);
   background-size: cover;
   position: relative;
